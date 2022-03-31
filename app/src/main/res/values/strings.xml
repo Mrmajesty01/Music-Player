@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="_1_37">1:37</string>
+    <string name="_4_00">4:00</string>
+    <string name="current_song_title">Current Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="voice_enable_mode_on">Voice Enable Mode - ON</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+</resources>

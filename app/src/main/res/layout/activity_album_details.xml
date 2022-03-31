@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AlbumDetails">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/AlbPic"
+        android:src="@drawable/opt3"
+        android:scaleType="centerCrop"
+        />
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/gradient"
+        android:src="@drawable/gradient"
+        android:scaleType="centerCrop"
+        />
+
+    <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_above="@+id/recyclerAlbum"
+    android:gravity="center"
+    app:adSize="BANNER"
+    app:adUnitId="ca-app-pub-3471834375937115/7697929649">
+   </com.google.android.gms.ads.AdView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerAlbum"
+        android:layout_below="@+id/AlbPic"
+        />
+
+
+
+</RelativeLayout>

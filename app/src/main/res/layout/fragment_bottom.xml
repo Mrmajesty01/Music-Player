@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:id="@+id/framelayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@android:color/white"
+        android:id="@+id/card_bottom_player">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/opt3"
+            android:layout_marginStart="3dp"
+            android:id="@+id/songArt"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="3dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/nextbtn"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_forward"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:id="@+id/prevbtn"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/ic_back"-->
+<!--            android:layout_toRightOf="@id/playpausebtn"-->
+<!--            android:layout_toLeftOf="@id/songName" />-->
+        
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/play"
+            android:background="@drawable/play_button_background"
+            android:tint="@color/colorWhite"
+            android:layout_toStartOf="@+id/nextbtn"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/playpausebtn"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/nextbtn" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@+id/songArt"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:id="@+id/songName"
+            android:layout_toRightOf="@+id/songArt"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@id/playpausebtn"
+            android:layout_toLeftOf="@id/playpausebtn" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@+id/songArt"
+            android:layout_below="@id/songName"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:id="@+id/ArtistName"
+            android:layout_toRightOf="@+id/songArt"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@id/playpausebtn"
+            android:layout_toLeftOf="@id/playpausebtn" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
